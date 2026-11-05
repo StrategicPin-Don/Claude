@@ -93,7 +93,7 @@ P = [
       head="Eight jobs off your plate.",
       line="Lead, Follow-Up, Proposal, Session, Onboarding, Content, CRM, Ads.",
       before=["leads", "follow-ups", "proposals", "session notes", "intake", "stories", "CRM", "ads"],
-      after=["01 Lead", "02 Follow-Up", "03 Proposal", "04 Session", "05 Onboarding", "06 Content", "07 CRM", "08 Ads"],
+      after=["Lead", "Follow-Up", "Proposal", "Session", "Onboarding", "Content", "CRM", "Ads"],
       bline="Eight jobs on your desk.", aline="Eight plugins doing them."),
  dict(slug="setup-call", name="Setup Call", code="SC", kind="service",
       head="Set up with a specialist, in one call.",
@@ -342,10 +342,11 @@ def s2(p):
         f'<div class="abs" style="left:120px;bottom:120px;width:1100px;font-size:34px;line-height:1.4">{esc(p["line"])}</div>', ACC)
 
 # ---------------------------------------------------------------- S3 what's inside
+PRODUCES = {'plugin-01-lead': 'A list sorted by who is ready', 'plugin-02-follow-up': 'Follow-up drafts in your voice', 'plugin-03-proposal': 'Proposal drafts', 'plugin-04-session': 'Summary, next steps, follow-up email', 'plugin-05-onboarding': 'A client profile before you meet', 'plugin-06-content': 'A story library tagged by topic', 'plugin-07-crm': 'Records that update themselves', 'plugin-08-ads': 'Ad variants to test'}
 def inside_items(p):
     if p["kind"] == "plugin":
         return [("Plugin", f'{p["name"]}: {p["sub"]}', True), ("Mini course", f'How to use {p["name"]}', False),
-                ("Reads", "Your Expert DNA files", False), ("Produces", p["after"][0] if p["slug"] != "plugin-03-proposal" else "Proposal drafts", False)]
+                ("Reads", "Your Expert DNA files", False), ("Produces", PRODUCES[p["slug"]], False)]
     if p["kind"] == "bundle":
         return [(f"Plugin {n}", name, i == 0) for i, (n, name) in enumerate(PLUGIN_NAMES)] + [("Included", "8 mini courses", False)]
     if p["kind"] == "starter":
@@ -355,15 +356,17 @@ def inside_items(p):
 def s3(p):
     items = inside_items(p)
     n = len(items)
-    cols = 3 if n in (6, 9) or n > 4 else 2
+    cols = 2 if n == 4 else 3
     cards = ""
+    fs = 58 if n <= 4 else (46 if n <= 6 else 38)
     for i, (k, v, hi) in enumerate(items):
         bg, fg, sub = (WHITE, INK, GREY) if (i % 3 != 1) else (SURF, WHITE, GREYD)
         if hi: bg, fg, sub = ACC, INK, INK
         mono = p["kind"] == "starter"
-        cards += (f'<div style="background:{bg};color:{fg};padding:34px 36px;min-height:{230 if n > 6 else 300}px;display:flex;flex-direction:column;justify-content:space-between;border:1.5px solid {LINED if bg==SURF else bg}">'
-                  f'<div class="mono" style="font-size:19px;color:{sub}">{esc(k)}</div>'
-                  f'<div style="font-size:{34 if (mono or len(v) > 30) else 42}px;font-weight:500;letter-spacing:-.02em;line-height:1.15;{"font-family:PM;letter-spacing:0" if mono else ""}">{esc(v)}</div></div>')
+        span = "grid-row:span 2;" if (n == 5 and i == 0) else ""
+        cards += (f'<div style="{span}background:{bg};color:{fg};padding:36px 38px;display:flex;flex-direction:column;justify-content:space-between;border:1.5px solid {LINED if bg==SURF else bg}">'
+                  f'<div style="display:flex;justify-content:space-between"><span class="mono" style="font-size:20px;color:{sub}">{esc(k)}</span><span class="mono" style="font-size:20px;color:{sub}">{i+1:02d}</span></div>'
+                  f'<div style="font-size:{fs - (8 if mono else 0)}px;font-weight:500;letter-spacing:-.025em;line-height:1.1;{"font-family:PM;letter-spacing:-.01em" if mono else ""}">{esc(v)}</div></div>')
     grid_w = 1380
     head = (f'<div class="abs" style="left:120px;top:150px;width:700px"><div class="lab" style="color:{GREYD}">What\'s inside / {esc(p["name"])}</div>'
             f'<div class="h" style="font-size:96px;color:{WHITE};margin-top:36px">{esc(p["head"])}</div></div>'
@@ -374,13 +377,13 @@ def s3(p):
 # ---------------------------------------------------------------- S4 before / after
 def s4(p):
     bef = p["before"]
-    pos = [(150, 360, -7), (560, 300, 5), (230, 640, 4), (620, 600, -5), (180, 930, -3), (560, 940, 6), (330, 1190, -4), (700, 1220, 3)]
+    pos = [(130, 300, -6), (600, 420, 5), (220, 640, 3), (650, 820, -5), (170, 1040, -3), (560, 1150, 6), (330, 860, -4), (720, 230, 3)]
     frags = ""
     for i, t in enumerate(bef):
         x, y, r = pos[i % len(pos)]
         bg = WHITE if i % 2 == 0 else TINT
-        frags += (f'<div class="abs" style="left:{x}px;top:{y}px;transform:rotate({r}deg);background:{bg};padding:26px 30px;width:{420 if len(bef) <= 5 else 330}px;border:1.5px solid {LINE}">'
-                  f'<div style="font-size:{30 if len(bef) <= 5 else 26}px;color:{INK};line-height:1.25">{esc(t)}</div></div>')
+        frags += (f'<div class="abs" style="left:{x}px;top:{y}px;transform:rotate({r}deg);background:{bg};padding:26px 30px;width:{470 if len(bef) <= 5 else 360}px;border:1.5px solid {LINE}">'
+                  f'<div style="font-size:{38 if len(bef) <= 5 else 30}px;color:{INK};line-height:1.25">{esc(t)}</div></div>')
     # tangled lines
     tang = ('<svg class="abs" style="left:80px;top:250px" width="1000" height="1200" viewBox="0 0 1000 1200">'
             f'<g fill="none" stroke="{GREY}" stroke-width="3" opacity=".55">'
@@ -389,16 +392,16 @@ def s4(p):
             '<path d="M120 1100 L880 300"/><path d="M200 300 L760 1000"/></g></svg>')
     after = ""
     for i, t in enumerate(p["after"]):
-        after += (f'<div style="display:grid;grid-template-columns:70px 1fr 44px;align-items:center;gap:20px;padding:{20 if len(p["after"]) > 6 else 30}px 0;border-bottom:1.5px solid {LINE}">'
-                  f'<span class="mono" style="font-size:22px;color:{DEEP}">{i+1:02d}</span><span style="font-size:{32 if len(p["after"]) > 6 else 38}px;font-weight:500">{esc(t)}</span>'
+        after += (f'<div style="display:grid;grid-template-columns:70px 1fr 44px;align-items:center;gap:20px;padding:{24 if len(p["after"]) > 6 else 46}px 0;border-bottom:1.5px solid {LINE}">'
+                  f'<span class="mono" style="font-size:26px;color:{DEEP}">{i+1:02d}</span><span style="font-size:{40 if len(p["after"]) > 6 else 50}px;font-weight:500;letter-spacing:-.02em">{esc(t)}</span>'
                   f'<i style="width:32px;height:32px;background:{INK};display:block"></i></div>')
     left = (f'<div class="abs" style="left:0;top:0;width:1170px;height:1600px;background:{PAPER};overflow:hidden">{tang}{frags}'
             f'<div class="abs lab" style="left:120px;top:120px;color:{GREY}">Before</div>'
-            f'<div class="abs h" style="left:120px;bottom:110px;font-size:48px;color:{GREY}">{esc(p["bline"])}</div></div>')
+            f'<div class="abs h" style="left:120px;bottom:110px;font-size:56px;color:{GREY}">{esc(p["bline"])}</div></div>')
     right = (f'<div class="abs" style="left:1290px;top:0;width:1110px;height:1600px;background:{WHITE}">'
              f'<div class="abs lab" style="left:120px;top:120px;color:{DEEP}">After / {esc(p["name"])}</div>'
-             f'<div class="abs" style="left:120px;top:300px;width:880px">{after}</div>'
-             f'<div class="abs h" style="left:120px;bottom:110px;font-size:48px">{esc(p["aline"])}</div></div>')
+             f'<div class="abs" style="left:120px;top:290px;width:880px">{after}</div>'
+             f'<div class="abs h" style="left:120px;bottom:110px;font-size:56px">{esc(p["aline"])}</div></div>')
     divider = (f'<div class="abs" style="left:1170px;top:0;width:120px;height:1600px;background:{WHITE}"></div>'
                f'<div class="abs" style="left:1170px;top:0;width:16px;height:1600px;background:{ACC}"></div>'
                f'<div class="abs" style="left:1206px;top:700px;width:84px;height:16px;background:{ACC}"></div>'
@@ -411,8 +414,10 @@ def sq(x, y, w, h, c): return f'<div class="abs" style="left:{x}px;top:{y}px;wid
 def composition(slug, fg, ac, alt):
     X, Y = 1000, 400  # area origin; area ~ 960 x 840
     c = ""
-    if slug == "starter":  # six files stacked
-        for i in range(6): c += sq(X, Y + i * 140, 700 - i * 60, 90, fg if i else ac)
+    if slug == "starter":  # six files, one in focus
+        for i in range(6):
+            cx, cy = X + (i % 3) * 300, Y + (i // 3) * 420
+            c += sq(cx, cy, 240, 360, ac if i == 3 else (fg if i % 2 == 0 else alt)) + sq(cx + 40, cy + 60, 120, 18, alt if i % 2 == 0 or i == 3 else fg)
     elif slug == "plugin-01-lead":  # sorted bars, ready ones lit
         for i, w in enumerate([820, 760, 520, 440, 300, 220]): c += sq(X, Y + i * 135, w, 80, ac if i < 2 else alt)
     elif slug == "plugin-02-follow-up":  # messages in a queue moving right
