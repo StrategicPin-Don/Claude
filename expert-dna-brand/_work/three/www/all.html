@@ -54,6 +54,7 @@ const P = [
   { code: 'GR', label: 'COURSE', name: 'Growth course', sub: 'Keep growing, step by step', ui: ['Growth course', ['Module 1', 'Module 2', 'Module 3']], cards: [['Modules', 'Course'], ['Lessons', 'Course'], ['Worksheets', 'Sheet']] },
   { code: 'SS', label: 'SESSION', name: 'Strategy session', sub: 'One clear plan, with Donatas Jonikas, PhD', ui: ['Strategy session', ['Where you are', 'Main constraint', 'Action plan']], cards: [['Session with Donatas', 'Call'], ['Main constraint', 'Map'], ['Action plan', 'Plan']] },
   { code: 'DFY', label: 'SERVICE', name: 'Done For You', sub: 'We build it. You stay human.', ui: ['Done for you', ['Files written with you', 'Plugins set up', 'Handed over, running']], cards: [['Expert DNA files', 'Built'], ['Plugins connected', 'Built'], ['Handover', 'Call']] },
+  { code: '', label: 'PLUGIN', name: 'Plugin', sub: 'Plugin and mini course', ui: ['Plugin', ['', '', '']], cards: [['Plugin files', 'Plugin'], ['Mini course', 'Course'], ['Worksheet', 'Sheet']] },
 ];
 
 // ---------- glyphs: one per product, from brand geometry ----------
@@ -77,18 +78,19 @@ function glyph(x, i, cx, cy, s, fg, ac) {
     case 11: bar(-80, -22, 160, 44, fg); bar(20, -34, 68, 68, ac); break; // kit: switch on
     case 12: [30, 55, 80, 110].forEach((h, k) => bar(-75 + k * 40, 55 - h, 30, h, k === 3 ? ac : fg)); break; // growth
     case 13: hd(-10, 0, 70, fg); bar(8, -7, 70, 14, ac); x.fillStyle = ac; x.beginPath(); x.moveTo(74, -26); x.lineTo(100, 0); x.lineTo(74, 26); x.fill(); break; // strategy: direction
+    case 15: bar(-75, -75, 150, 150, fg); bar(-45, -45, 90, 90, '#00000000'); x.clearRect(-45, -45, 90, 90); bar(-20, -20, 40, 40, ac); break; // generic module
     case 14: bar(-70, -70, 140, 140, fg); x.strokeStyle = ac; x.lineWidth = 18; x.lineCap = 'square'; x.beginPath(); x.moveTo(-35, 0); x.lineTo(-8, 28); x.lineTo(40, -28); x.stroke(); break; // dfy: done
   }
   x.restore();
 }
 function uiTex(i) { const p = P[i]; return tex((x, w, h) => {
   x.fillStyle = '#fff'; x.fillRect(0, 0, w, h); x.fillStyle = '#F4F3F0'; x.fillRect(0, 0, w * 0.26, h);
-  glyph(x, i, 80, 80, 0.38, '#101114', '#FF5533'); x.fillStyle = '#101114'; x.font = '500 34px HK'; x.fillText(p.name.length > 14 ? p.code : p.name, 140, 92);
+  glyph(x, i, 80, 80, 0.38, '#101114', '#FF5533'); x.fillStyle = '#101114'; x.font = '500 34px HK'; x.fillText(p.name.length > 14 ? p.code : p.name, 140, 92); if (!p.code) { x.fillStyle = '#F4F3F0'; }
   x.fillStyle = '#66655F'; x.font = '500 20px PM'; ['YOUR FILES', 'offers.md', 'client.md', 'method.md', 'voice.md'].forEach((s, k) => x.fillText(s, 40, 200 + k * 54));
   const L = w * 0.3; x.fillStyle = '#B32F15'; x.font = '500 24px PM'; x.fillText(p.label, L, 90); x.fillStyle = '#FF5533'; x.fillRect(w * 0.78, 52, w * 0.17, 60);
   x.fillStyle = '#101114'; x.font = '500 30px HK'; x.fillText('Open', w * 0.83, 93);
   x.fillStyle = '#101114'; x.font = '500 60px HK'; x.fillText(p.ui[0], L, 190);
-  p.ui[1].forEach((r, k) => { const y = 300 + k * 170; x.fillStyle = k === 0 ? '#FFE1D8' : '#F4F3F0'; x.fillRect(L - 20, y - 50, w * 0.66, 140); x.fillStyle = '#101114'; x.font = '500 34px HK'; x.fillText(r, L, y);
+  p.ui[1].forEach((r, k) => { const y = 300 + k * 170; x.fillStyle = k === 0 ? '#FFE1D8' : '#F4F3F0'; x.fillRect(L - 20, y - 50, w * 0.66, 140); x.fillStyle = '#101114'; x.font = '500 34px HK'; if (r) x.fillText(r, L, y); else x.fillRect(L, y - 26, w * (0.3 - k * 0.04), 26);
     x.fillStyle = '#DCD9D3'; x.fillRect(L, y + 26, w * 0.52, 12); x.fillRect(L, y + 54, w * 0.38, 12); });
 }, 1600, 1000); }
 function coverTex(i, w, h, labelPrefix) { const p = P[i]; return tex((x, cw, ch) => { x.fillStyle = '#101114'; x.fillRect(0, 0, cw, ch); x.fillStyle = '#FF5533'; x.font = '500 46px PM'; x.fillText(labelPrefix || p.label, 70, 110);
@@ -109,7 +111,7 @@ function folderC(i, s = 1) { const g = new THREE.Group();
     const tab = box(0.5 * s, 0.025 * s, 0.3 * s, 0.02 * s, k === 1 ? mat.acc : mat.white); tab.position.set(1.55 * s, 0.07 * s + k * 0.03 * s, -1.4 * s + k * 0.62 * s); g.add(tab); }
   const lid = new THREE.Mesh(new THREE.BoxGeometry(3.0 * s, 0.06 * s, 3.8 * s), [mat.ink, mat.ink, tm(coverTex(i, 1024, 1300, P[i].label.replace('PLUGIN', 'FILE')), 0.4), mat.ink, mat.ink, mat.ink]); lid.position.y = 0.25 * s; lid.castShadow = true; g.add(lid); return g; }
 function tileD(i, s = 1) { const g = new THREE.Group(); const sz = 2.4 * s; const hero = [2, 8, 13, 14].includes(i) ? false : false;
-  const accent = i === 2 || i === 8 || i === 14; const base = box(sz, 0.55 * s, sz, 0.5 * s, accent ? mat.glossAcc : (i === 13 ? mat.glossInk : mat.glossWhite)); base.position.y = 0.275 * s; g.add(base);
+  const accent = i === 2 || i === 8 || i === 14 || i === 15; const base = box(sz, 0.55 * s, sz, 0.5 * s, accent ? mat.glossAcc : (i === 13 ? mat.glossInk : mat.glossWhite)); base.position.y = 0.275 * s; g.add(base);
   const fg = i === 13 ? '#F4F3F0' : '#101114', ac = accent ? '#F4F3F0' : '#FF5533';
   const t = tex((x, cw, ch) => glyph(x, i, cw / 2, ch / 2, 2.6, fg, ac), 1024, 1024);
   const face = new THREE.Mesh(new THREE.PlaneGeometry(sz * 0.8, sz * 0.8), basic(t, true)); face.rotation.x = -Math.PI / 2; face.position.y = 0.552 * s; g.add(face); return g; }
