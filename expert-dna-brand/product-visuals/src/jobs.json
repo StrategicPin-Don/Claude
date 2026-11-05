@@ -1,0 +1,302 @@
+[
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/starter/starter-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/starter/starter-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/starter/starter-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/starter/starter-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/starter/starter-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/starter/starter-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/starter/starter-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/starter/starter-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/starter/starter-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/starter/starter-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-01-lead/plugin-01-lead-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-01-lead/plugin-01-lead-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-01-lead/plugin-01-lead-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-01-lead/plugin-01-lead-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-01-lead/plugin-01-lead-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-01-lead/plugin-01-lead-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-01-lead/plugin-01-lead-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-01-lead/plugin-01-lead-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-01-lead/plugin-01-lead-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-01-lead/plugin-01-lead-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-02-follow-up/plugin-02-follow-up-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-02-follow-up/plugin-02-follow-up-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-02-follow-up/plugin-02-follow-up-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-02-follow-up/plugin-02-follow-up-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-02-follow-up/plugin-02-follow-up-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-02-follow-up/plugin-02-follow-up-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-02-follow-up/plugin-02-follow-up-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-02-follow-up/plugin-02-follow-up-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-02-follow-up/plugin-02-follow-up-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-02-follow-up/plugin-02-follow-up-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-03-proposal/plugin-03-proposal-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-03-proposal/plugin-03-proposal-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-03-proposal/plugin-03-proposal-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-03-proposal/plugin-03-proposal-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-03-proposal/plugin-03-proposal-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-03-proposal/plugin-03-proposal-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-03-proposal/plugin-03-proposal-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-03-proposal/plugin-03-proposal-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-03-proposal/plugin-03-proposal-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-03-proposal/plugin-03-proposal-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-04-session/plugin-04-session-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-04-session/plugin-04-session-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-04-session/plugin-04-session-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-04-session/plugin-04-session-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-04-session/plugin-04-session-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-04-session/plugin-04-session-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-04-session/plugin-04-session-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-04-session/plugin-04-session-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-04-session/plugin-04-session-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-04-session/plugin-04-session-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-05-onboarding/plugin-05-onboarding-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-05-onboarding/plugin-05-onboarding-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-05-onboarding/plugin-05-onboarding-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-05-onboarding/plugin-05-onboarding-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-05-onboarding/plugin-05-onboarding-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-05-onboarding/plugin-05-onboarding-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-05-onboarding/plugin-05-onboarding-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-05-onboarding/plugin-05-onboarding-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-05-onboarding/plugin-05-onboarding-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-05-onboarding/plugin-05-onboarding-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-06-content/plugin-06-content-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-06-content/plugin-06-content-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-06-content/plugin-06-content-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-06-content/plugin-06-content-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-06-content/plugin-06-content-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-06-content/plugin-06-content-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-06-content/plugin-06-content-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-06-content/plugin-06-content-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-06-content/plugin-06-content-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-06-content/plugin-06-content-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-07-crm/plugin-07-crm-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-07-crm/plugin-07-crm-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-07-crm/plugin-07-crm-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-07-crm/plugin-07-crm-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-07-crm/plugin-07-crm-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-07-crm/plugin-07-crm-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-07-crm/plugin-07-crm-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-07-crm/plugin-07-crm-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-07-crm/plugin-07-crm-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-07-crm/plugin-07-crm-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-08-ads/plugin-08-ads-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-08-ads/plugin-08-ads-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-08-ads/plugin-08-ads-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-08-ads/plugin-08-ads-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-08-ads/plugin-08-ads-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-08-ads/plugin-08-ads-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-08-ads/plugin-08-ads-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-08-ads/plugin-08-ads-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/plugin-08-ads/plugin-08-ads-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/plugin-08-ads/plugin-08-ads-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/all-8-plugins/all-8-plugins-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/all-8-plugins/all-8-plugins-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/all-8-plugins/all-8-plugins-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/all-8-plugins/all-8-plugins-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/all-8-plugins/all-8-plugins-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/all-8-plugins/all-8-plugins-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/all-8-plugins/all-8-plugins-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/all-8-plugins/all-8-plugins-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/all-8-plugins/all-8-plugins-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/all-8-plugins/all-8-plugins-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/setup-call/setup-call-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/setup-call/setup-call-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/setup-call/setup-call-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/setup-call/setup-call-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/setup-call/setup-call-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/setup-call/setup-call-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/setup-call/setup-call-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/setup-call/setup-call-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/setup-call/setup-call-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/setup-call/setup-call-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/connect-and-run-kit/connect-and-run-kit-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/connect-and-run-kit/connect-and-run-kit-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/connect-and-run-kit/connect-and-run-kit-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/connect-and-run-kit/connect-and-run-kit-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/connect-and-run-kit/connect-and-run-kit-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/connect-and-run-kit/connect-and-run-kit-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/connect-and-run-kit/connect-and-run-kit-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/connect-and-run-kit/connect-and-run-kit-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/connect-and-run-kit/connect-and-run-kit-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/connect-and-run-kit/connect-and-run-kit-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/growth-course/growth-course-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/growth-course/growth-course-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/growth-course/growth-course-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/growth-course/growth-course-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/growth-course/growth-course-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/growth-course/growth-course-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/growth-course/growth-course-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/growth-course/growth-course-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/growth-course/growth-course-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/growth-course/growth-course-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/strategy-session/strategy-session-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/strategy-session/strategy-session-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/strategy-session/strategy-session-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/strategy-session/strategy-session-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/strategy-session/strategy-session-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/strategy-session/strategy-session-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/strategy-session/strategy-session-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/strategy-session/strategy-session-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/strategy-session/strategy-session-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/strategy-session/strategy-session-s5-plug-in.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/done-for-you/done-for-you-s1-interface.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/done-for-you/done-for-you-s1-interface.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/done-for-you/done-for-you-s2-statement.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/done-for-you/done-for-you-s2-statement.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/done-for-you/done-for-you-s3-inside.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/done-for-you/done-for-you-s3-inside.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/done-for-you/done-for-you-s4-before-after.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/done-for-you/done-for-you-s4-before-after.png"
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/product-visuals/src/html/done-for-you/done-for-you-s5-plug-in.html",
+  "out": "/home/user/Claude/expert-dna-brand/product-visuals/done-for-you/done-for-you-s5-plug-in.png"
+ }
+]

@@ -1,0 +1,57 @@
+:root {
+  --edna-ink: #101114;
+  --edna-white: #FFFFFF;
+  --edna-paper: #F4F3F0;
+  --edna-accent: #FF5533;
+  --edna-accent-tint: #FFE1D8;
+  --edna-accent-deep: #B32F15;
+  --edna-grey: #66655F;
+  --edna-grey-dark: #A3A29C;
+  --edna-line: #E2E0DB;
+  --edna-line-dark: #2E3036;
+  --edna-surface-dark: #1A1B1F;
+  --edna-font-sans: 'Hanken Grotesk', Arial, sans-serif;
+  --edna-font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  --edna-s1: 4px;
+  --edna-s2: 8px;
+  --edna-s3: 12px;
+  --edna-s4: 16px;
+  --edna-s6: 24px;
+  --edna-s8: 32px;
+  --edna-s12: 48px;
+  --edna-s16: 64px;
+  --edna-s24: 96px;
+  --edna-s32: 128px;
+  --edna-radius: 0;
+}
+
+@font-face{font-family:'Hanken Grotesk';font-weight:400;src:url(../../fonts/HankenGrotesk-Regular.ttf)}
+@font-face{font-family:'Hanken Grotesk';font-weight:500;src:url(../../fonts/HankenGrotesk-Medium.ttf)}
+@font-face{font-family:'Hanken Grotesk';font-weight:700;src:url(../../fonts/HankenGrotesk-Bold.ttf)}
+@font-face{font-family:'IBM Plex Mono';font-weight:500;src:url(../../fonts/IBMPlexMono-Medium.ttf)}
+.edna{--bg:var(--edna-white);--fg:var(--edna-ink);--sub:var(--edna-grey);--ln:var(--edna-line);--card:var(--edna-white);--surface:var(--edna-paper);--labc:var(--edna-accent-deep);
+  background:var(--bg);color:var(--fg);font-family:var(--edna-font-sans)}
+.edna-dark{--bg:var(--edna-ink);--fg:var(--edna-white);--sub:var(--edna-grey-dark);--ln:var(--edna-line-dark);--card:var(--edna-surface-dark);--surface:var(--edna-surface-dark);--labc:var(--edna-grey-dark)}
+.edna *{box-sizing:border-box;border-radius:0}
+.edna-label{font:500 12px/1.2 var(--edna-font-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--labc);display:inline-flex;align-items:center;gap:10px}
+.edna-label::before{content:"";width:14px;height:4px;background:var(--edna-accent)}
+.edna-h{font-weight:500;letter-spacing:-.03em;line-height:1.05}
+.edna-btn{display:inline-block;font:500 16px/1 var(--edna-font-sans);padding:16px 24px;border:1.5px solid transparent;text-decoration:none;cursor:pointer}
+.edna-btn--primary{background:var(--edna-accent);color:var(--edna-ink);border-color:var(--edna-accent)}
+.edna-btn--secondary{background:transparent;color:var(--fg);border-color:var(--fg)}
+.edna-link{color:var(--fg);text-decoration:none;border-bottom:2px solid var(--edna-accent);padding-bottom:1px}
+.edna-badge{display:inline-block;font:500 11px var(--edna-font-mono);letter-spacing:.12em;text-transform:uppercase;padding:6px 9px;border:1px solid var(--fg);color:var(--fg)}
+.edna-card{background:var(--card);border:1px solid var(--ln);padding:28px;display:flex;flex-direction:column;gap:14px}
+.edna-card__price{font:500 40px/1 var(--edna-font-sans);letter-spacing:-.03em}
+.edna-card__note{font:400 10px var(--edna-font-mono);letter-spacing:.1em;color:var(--sub);text-transform:uppercase}
+.edna-bump{background:var(--edna-accent-tint);color:var(--edna-ink);border-left:3px solid var(--edna-accent);padding:18px 20px;display:flex;gap:14px;align-items:flex-start}
+.edna-bump input{width:22px;height:22px;accent-color:var(--edna-ink);margin-top:2px;flex:none}
+.edna-bump strong{font-weight:500;font-size:18px;display:block} .edna-bump span{font-size:14px;color:var(--edna-grey)}
+.edna-field label{display:block;font:500 11px var(--edna-font-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--sub);margin-bottom:8px}
+.edna-field input{width:100%;font:400 16px var(--edna-font-sans);padding:14px 16px;border:1px solid var(--fg);background:var(--bg);color:var(--fg);outline:none}
+.edna-field small{display:block;color:var(--sub);font-size:13px;margin-top:6px}
+.edna-callout{background:var(--edna-accent-tint);color:var(--edna-ink);border-left:3px solid var(--edna-accent);padding:18px 20px;font-size:16px;line-height:1.5}
+.edna-quote{display:grid;grid-template-columns:120px 1fr;gap:24px;border-top:1px solid var(--ln);padding-top:24px}
+.edna-quote__photo{width:120px;height:120px;border:1px dashed var(--sub);display:flex;align-items:flex-end;padding:8px;font:500 9px var(--edna-font-mono);letter-spacing:.1em;color:var(--sub);text-transform:uppercase}
+.edna-quote blockquote{margin:0;font-size:22px;line-height:1.4;letter-spacing:-.01em}
+.edna-quote cite{display:block;font-style:normal;font:500 12px var(--edna-font-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--sub);margin-top:14px}

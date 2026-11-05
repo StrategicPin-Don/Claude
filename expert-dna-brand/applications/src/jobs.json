@@ -1,0 +1,218 @@
+[
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/social-1080x1080-dark.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/social-1080x1080-dark.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": true
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/social-1080x1350-accent.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/social-1080x1350-accent.png",
+  "w": 1080,
+  "h": 1350,
+  "scale": 1,
+  "measure": true
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/social-1080x1080-light.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/social-1080x1080-light.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": true
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/ad-1080x1350-dark.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/ad-1080x1350-dark.png",
+  "w": 1080,
+  "h": 1350,
+  "scale": 1,
+  "measure": true
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/ad-1080x1350-accent.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/ad-1080x1350-accent.png",
+  "w": 1080,
+  "h": 1350,
+  "scale": 1,
+  "measure": true
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/email-header-600.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/email-header-600.png",
+  "w": 600,
+  "h": 140,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/email-header-600.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/email-header-600@2x.png",
+  "w": 600,
+  "h": 140,
+  "scale": 2,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/email-footer-600.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/email-footer-600.png",
+  "w": 600,
+  "h": 240,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/email-footer-600.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/email-footer-600@2x.png",
+  "w": 600,
+  "h": 240,
+  "scale": 2,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/link-preview-1200x630.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/link-preview-1200x630.png",
+  "w": 1200,
+  "h": 630,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/plugins/plugin-01-lead.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/plugins/plugin-01-lead.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/plugins/plugin-02-follow-up.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/plugins/plugin-02-follow-up.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/plugins/plugin-03-proposal.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/plugins/plugin-03-proposal.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/plugins/plugin-04-session.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/plugins/plugin-04-session.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/plugins/plugin-05-onboarding.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/plugins/plugin-05-onboarding.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/plugins/plugin-06-content.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/plugins/plugin-06-content.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/plugins/plugin-07-crm.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/plugins/plugin-07-crm.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/plugins/plugin-08-ads.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/plugins/plugin-08-ads.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/plugins/tile-starter.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/plugins/tile-starter.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/plugins/tile-bundle-8.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/plugins/tile-bundle-8.png",
+  "w": 1080,
+  "h": 1080,
+  "scale": 1,
+  "measure": false
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/logo-rules.html",
+  "out": "/home/user/Claude/expert-dna-brand/logo/logo-rules.png",
+  "w": 2400,
+  "h": 1200,
+  "scale": 1,
+  "measure": false,
+  "full": true
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/landing/landing-hero.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/landing/landing-375.png",
+  "w": 375,
+  "h": 900,
+  "scale": 2,
+  "measure": false,
+  "full": true,
+  "overflow": true
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/landing/landing-hero.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/landing/landing-1440.png",
+  "w": 1440,
+  "h": 900,
+  "scale": 1,
+  "measure": false,
+  "full": true,
+  "overflow": true
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/components/components.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/components/components.png",
+  "w": 1600,
+  "h": 900,
+  "scale": 1,
+  "measure": false,
+  "full": true
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/components/components-dark.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/components/components-dark.png",
+  "w": 1600,
+  "h": 900,
+  "scale": 1,
+  "measure": false,
+  "full": true
+ },
+ {
+  "html": "/home/user/Claude/expert-dna-brand/applications/src/plugins/plugins-overview.html",
+  "out": "/home/user/Claude/expert-dna-brand/applications/plugins/plugins-overview.png",
+  "w": 2400,
+  "h": 1500,
+  "scale": 1,
+  "measure": false,
+  "full": true
+ }
+]
