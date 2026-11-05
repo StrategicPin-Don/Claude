@@ -1,15 +1,16 @@
 :root {
   --edna-ink: #101114;
-  --edna-paper: #F4F1EC;
   --edna-white: #FFFFFF;
+  --edna-paper: #F4F3F0;
   --edna-accent: #FF5533;
   --edna-accent-tint: #FFE1D8;
   --edna-accent-deep: #B32F15;
   --edna-grey: #66655F;
   --edna-grey-dark: #A3A29C;
-  --edna-line: #DCD7CE;
-  --edna-line-dark: #34383F;
-  --edna-font-sans: 'Schibsted Grotesk', Arial, sans-serif;
+  --edna-line: #E2E0DB;
+  --edna-line-dark: #2E3036;
+  --edna-surface-dark: #1A1B1F;
+  --edna-font-sans: 'Hanken Grotesk', Arial, sans-serif;
   --edna-font-mono: 'IBM Plex Mono', 'Courier New', monospace;
   --edna-s1: 4px;
   --edna-s2: 8px;
@@ -22,5 +23,4 @@
   --edna-s24: 96px;
   --edna-s32: 128px;
   --edna-radius: 0;
-  --edna-rule: 1px solid var(--edna-line);
 }

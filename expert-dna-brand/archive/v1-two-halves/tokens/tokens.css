@@ -1,0 +1,26 @@
+:root {
+  --edna-ink: #101114;
+  --edna-paper: #F4F1EC;
+  --edna-white: #FFFFFF;
+  --edna-accent: #FF5533;
+  --edna-accent-tint: #FFE1D8;
+  --edna-accent-deep: #B32F15;
+  --edna-grey: #66655F;
+  --edna-grey-dark: #A3A29C;
+  --edna-line: #DCD7CE;
+  --edna-line-dark: #34383F;
+  --edna-font-sans: 'Schibsted Grotesk', Arial, sans-serif;
+  --edna-font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+  --edna-s1: 4px;
+  --edna-s2: 8px;
+  --edna-s3: 12px;
+  --edna-s4: 16px;
+  --edna-s6: 24px;
+  --edna-s8: 32px;
+  --edna-s12: 48px;
+  --edna-s16: 64px;
+  --edna-s24: 96px;
+  --edna-s32: 128px;
+  --edna-radius: 0;
+  --edna-rule: 1px solid var(--edna-line);
+}
