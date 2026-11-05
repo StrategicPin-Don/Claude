@@ -236,19 +236,23 @@ Layout rules: generous white space (at least one third of a slide or post empty)
 
 ---
 
-## 8. Product visuals (sales pages)
+## 8. Product visuals (sales pages): "Plug your head in"
 
-Files: `product-visuals/`. Every product (except the book) has the same five styles, so any page can pick one style and stay consistent:
+Files: `product-3d/` (overview: `product-3d/overview.png`). Every product is a physical 3D object from one hardware family: matte ink body, white ceramic half moon (the expert's head), orange metal plug (the connection to AI). PNG, 2400 x 1600 px, transparent background with a soft contact shadow, no logo, no brand name.
 
-| No. | Style | What it shows |
+Objects: plugins 01-08 = plug-in modules with number and name; all 8 plugins = eight modules plugged into one spine; Starter = an open box of file cards; Setup Call = a wall socket with a module being plugged in; Connect and Run Kit = a power strip with modules and cable; Growth course = ascending blocks with a module on top; Strategy session = a large half moon sculpture with one plug; Done For You = a closed premium box with orange bands.
+
+The same five views for every product:
+
+| No. | View | What it shows |
 |---|---|---|
-| S1 | Interface | A clean app or document window showing what the product produces |
-| S2 | Statement | Full accent field, one large outcome headline, an ink half moon |
-| S3 | What's inside | Dark field, an exploded stack of cards listing the contents |
-| S4 | Before / After | Paper "before" with scattered fragments, white "after" with order, the plug as the divider |
-| S5 | Plug-in | Abstract: half moon, plug and a product-specific geometric form, large product number |
+| 1 | Hero | Three-quarter studio view |
+| 2 | Low | Low, close side angle |
+| 3 | Exploded | Parts pulled apart: what is inside |
+| 4 | Top | Top-down view of the object with its contents as cards |
+| 5 | Context | The object on a desk next to a laptop showing the plugin screen |
 
-Rules: 2400 x 1600 px, no logo, no brand name, neutral mock data only, no invented numbers.
+The earlier flat illustration set is in `archive/` and is not used. In product mockups only, a soft contact shadow is allowed; the no-shadow rule still applies to all other layouts.
 
 ## 9. Plugin identity
 
@@ -337,7 +341,7 @@ expert-dna-brand/
   logo/svg, logo/png, logo/favicon, logo/logo-rules.png
   fonts/                         Hanken Grotesk, IBM Plex Mono, licences, FONTS.md
   tokens/                        tokens.css, tokens.json, contrast.json
-  product-visuals/               5 styles x 15 products, overview, README
+  product-3d/                    3D product visuals: 15 products x 5 views, transparent PNG, overview
   powerpoint/                    expert-dna-template.pptx, preview, HOW-TO-USE.md
   applications/                  social, ads, email, link preview, landing, components, plugins
   archive/v1-two-halves/         previous version, not for use
