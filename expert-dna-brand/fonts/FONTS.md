@@ -1,15 +1,15 @@
 # Expert DNA fonts: how to install them on Windows
 
-Expert DNA uses two free fonts. Both are licensed under the SIL Open Font License 1.1, which allows you to use them commercially and to share the files. The license texts are in this folder.
+Expert DNA uses two free fonts. Both are licensed under the SIL Open Font License 1.1, which allows commercial use and sharing the files. The license texts are in this folder.
 
 ## What is in this folder
 
-- SchibstedGrotesk-Regular.ttf
-- SchibstedGrotesk-Medium.ttf
-- SchibstedGrotesk-Bold.ttf
+- HankenGrotesk-Regular.ttf
+- HankenGrotesk-Medium.ttf
+- HankenGrotesk-Bold.ttf
 - IBMPlexMono-Regular.ttf
 - IBMPlexMono-Medium.ttf
-- LICENSE-SchibstedGrotesk-OFL.txt
+- LICENSE-HankenGrotesk-OFL.txt
 - LICENSE-IBMPlexMono-OFL.txt
 
 ## Install (about one minute)
@@ -22,9 +22,9 @@ Expert DNA uses two free fonts. Both are licensed under the SIL Open Font Licens
 
 ## How the fonts appear in PowerPoint
 
-- Schibsted Grotesk: headlines (use the Bold button) and body text
-- Schibsted Grotesk Medium: buttons, card titles, the tagline
-- IBM Plex Mono Medium: small uppercase labels, plugin numbers, prices in tables
+- Hanken Grotesk Medium: headlines and titles
+- Hanken Grotesk: body text (Bold button for small emphasis only)
+- IBM Plex Mono Medium: small uppercase labels, numbers, captions
 
 ## If a font does not show up
 
