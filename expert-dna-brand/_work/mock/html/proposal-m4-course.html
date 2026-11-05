@@ -1,0 +1,47 @@
+<!doctype html><meta charset=utf-8><style>
+@font-face{font-family:HK;font-weight:400;src:url(../../fonts/HankenGrotesk-Regular.ttf)}
+@font-face{font-family:HK;font-weight:500;src:url(../../fonts/HankenGrotesk-Medium.ttf)}
+@font-face{font-family:HK;font-weight:700;src:url(../../fonts/HankenGrotesk-Bold.ttf)}
+@font-face{font-family:PM;src:url(../../fonts/IBMPlexMono-Medium.ttf)}
+*{margin:0;box-sizing:border-box}
+body{width:2400px;height:1600px;overflow:hidden;font-family:HK;color:#101114;position:relative}
+.mono{font-family:PM;letter-spacing:.12em;text-transform:uppercase}
+/* ---------- app screen: proposal plugin ---------- */
+.app{width:100%;height:100%;background:#fff;display:grid;grid-template-columns:23% 1fr;font-size:15px}
+.side{background:#F4F3F0;border-right:1px solid #E2E0DB;padding:26px 20px}
+.side .t{font:11px PM;letter-spacing:.12em;color:#66655F;margin:22px 0 10px}
+.side .i{padding:10px 12px;font-size:14px;color:#333;display:flex;justify-content:space-between}
+.side .i.on{background:#fff;border-left:3px solid #FF5533;font-weight:500}
+.side .tag{font:10px PM;color:#B32F15}
+.doc{padding:34px 46px;overflow:hidden}
+.doc .top{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #E2E0DB;padding-bottom:16px}
+.doc .btn{background:#FF5533;color:#101114;font-weight:500;padding:9px 16px;font-size:13px}
+.doc .st{font:11px PM;letter-spacing:.12em;color:#B32F15}
+.doc h3{font-weight:500;font-size:30px;letter-spacing:-.02em;margin:22px 0 6px}
+.doc h4{font-weight:500;font-size:17px;margin:18px 0 6px}
+.doc p{font-size:14px;line-height:1.55;color:#3A3B3F;max-width:620px}
+.doc .hl{background:#FFE1D8}
+.doc .src{font:10px PM;color:#66655F;letter-spacing:.08em;margin-top:4px}
+/* ---------- devices ---------- */
+.laptop{position:absolute}
+.laptop .lid{background:#1B1C20;border-radius:22px 22px 0 0;padding:22px 22px 30px;box-shadow:0 1px 0 #2a2b30 inset}
+.laptop .screen{overflow:hidden;background:#fff;border-radius:4px}
+.laptop .base{height:30px;background:linear-gradient(#D9D8D4,#BDBCB7);border-radius:0 0 26px 26px;margin:0 -70px;position:relative}
+.laptop .base:before{content:'';position:absolute;left:50%;top:0;width:220px;height:10px;margin-left:-110px;background:#A9A8A3;border-radius:0 0 10px 10px}
+.phone{position:absolute;background:#1B1C20;border-radius:56px;padding:16px}
+.phone .screen{border-radius:42px;overflow:hidden;background:#fff;height:100%}
+.tablet{position:absolute;background:#1B1C20;border-radius:40px;padding:24px}
+.tablet .screen{border-radius:18px;overflow:hidden;background:#fff;height:100%}
+.shadow{box-shadow:0 60px 90px -30px rgba(16,17,20,.35),0 24px 40px -20px rgba(16,17,20,.25)}
+.floor{position:absolute;border-radius:50%;background:radial-gradient(rgba(16,17,20,.28),rgba(16,17,20,0) 70%)}
+</style><body style="background:#101114"><div style="position:absolute;left:120px;top:150px;width:900px"><div class="mono" style="font-size:18px;color:#FF5533">Mini course included</div>
+<div style="font-weight:500;font-size:92px;line-height:1.02;letter-spacing:-.03em;color:#fff;margin-top:28px">Learn it in one sitting.</div>
+<div style="margin-top:60px;color:#fff;max-width:760px"><div style="display:flex;gap:22px;padding:22px 0;border-bottom:1px solid #2E3036;font-size:26px"><span class="mono" style="font-size:16px;color:#FF5533;padding-top:6px">01</span><span>Write your offer file</span></div><div style="display:flex;gap:22px;padding:22px 0;border-bottom:1px solid #2E3036;font-size:26px"><span class="mono" style="font-size:16px;color:#FF5533;padding-top:6px">02</span><span>Turn call notes into a draft</span></div><div style="display:flex;gap:22px;padding:22px 0;border-bottom:1px solid #2E3036;font-size:26px"><span class="mono" style="font-size:16px;color:#FF5533;padding-top:6px">03</span><span>Check the draft in your voice</span></div><div style="display:flex;gap:22px;padding:22px 0;border-bottom:1px solid #2E3036;font-size:26px"><span class="mono" style="font-size:16px;color:#FF5533;padding-top:6px">04</span><span>Send, follow up, close</span></div></div></div>
+<div class="shadow" style="position:absolute;left:1160px;top:220px;width:1120px;height:700px;background:#1A1B1F;border:1px solid #2E3036">
+<div style="position:absolute;inset:0;background:#F4F3F0;overflow:hidden"><div style="position:absolute;left:-120px;top:120px;width:460px;height:460px;border-radius:50%;background:#101114"></div>
+<div style="position:absolute;left:420px;top:150px"><div class="mono" style="font-size:16px;color:#B32F15">Lesson 02</div><div style="font-weight:500;font-size:58px;letter-spacing:-.02em;margin-top:16px;width:560px;line-height:1.05">Turn call notes into a draft</div></div>
+<div style="position:absolute;left:500px;top:420px;width:120px;height:120px;border-radius:50%;background:#FF5533"><div style="position:absolute;left:48px;top:34px;border-left:40px solid #101114;border-top:26px solid transparent;border-bottom:26px solid transparent"></div></div></div>
+<div style="position:absolute;left:0;right:0;bottom:0;height:56px;background:rgba(16,17,20,.85);display:flex;align-items:center;padding:0 24px;gap:18px"><div style="width:40%;height:6px;background:#FF5533"></div><div style="flex:1;height:6px;background:#3A3B40"></div><span class="mono" style="color:#A3A29C;font-size:13px">06:12</span></div></div>
+<div class="shadow" style="position:absolute;left:1580px;top:820px;width:620px;height:700px;background:#fff;transform:rotate(4deg);padding:56px 50px">
+<div class="mono" style="font-size:14px;color:#B32F15">Worksheet</div><div style="font-weight:500;font-size:40px;letter-spacing:-.02em;margin-top:14px">Your offer file</div>
+<div class="mono" style="font-size:12px;color:#66655F;margin-top:34px">Offer name</div><div style="border-bottom:2px solid #E2E0DB;height:46px"></div><div class="mono" style="font-size:12px;color:#66655F;margin-top:34px">Price</div><div style="border-bottom:2px solid #E2E0DB;height:46px"></div><div class="mono" style="font-size:12px;color:#66655F;margin-top:34px">Who it is for</div><div style="border-bottom:2px solid #E2E0DB;height:46px"></div><div class="mono" style="font-size:12px;color:#66655F;margin-top:34px">What the client gets</div><div style="border-bottom:2px solid #E2E0DB;height:46px"></div></div></body>

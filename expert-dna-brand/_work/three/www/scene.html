@@ -1,0 +1,127 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:HK;font-weight:500;src:url(/fonts/HankenGrotesk-Medium.ttf)}
+@font-face{font-family:PM;src:url(/fonts/IBMPlexMono-Medium.ttf)}
+html,body{margin:0;background:#F4F3F0;overflow:hidden}
+</style>
+<script type="importmap">{"imports":{"three":"/three/build/three.module.js","three/addons/":"/three/examples/jsm/"}}</script>
+</head><body>
+<script type="module">
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+import { RoomEnvironment } from 'three/addons/environments/RoomEnvironment.js';
+
+const Q = new URLSearchParams(location.search);
+const W = +(Q.get('w') || 2400), H = +(Q.get('h') || 1600);
+const SCENE = Q.get('scene') || 'hero';
+const NUM = Q.get('num') || '03';
+const NAME = Q.get('name') || 'Proposal';
+const BG = Q.get('bg') || '#F4F3F0';
+const DARK = Q.get('dark') === '1';
+
+await document.fonts.load('500 100px HK'); await document.fonts.load('100px PM');
+
+const INK = 0x16171a, ACC = 0xff5533, WHITE = 0xf2f1ee;
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setPixelRatio(1); renderer.setSize(W, H);
+renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = DARK ? 0.9 : 1.05;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(BG);
+const pmrem = new THREE.PMREMGenerator(renderer);
+scene.environment = pmrem.fromScene(new RoomEnvironment(renderer), 0.04).texture;
+
+// floor
+const floor = new THREE.Mesh(new THREE.PlaneGeometry(200, 200), new THREE.MeshStandardMaterial({ color: BG, roughness: 1 }));
+floor.rotation.x = -Math.PI / 2; floor.receiveShadow = true; scene.add(floor);
+
+// lights
+const key = new THREE.DirectionalLight(0xffffff, DARK ? 2.6 : 2.4);
+key.position.set(-7, 11, 5); key.castShadow = true;
+key.shadow.mapSize.set(4096, 4096); key.shadow.radius = 14; key.shadow.blurSamples = 25; key.shadow.bias = -0.0004;
+Object.assign(key.shadow.camera, { left: -12, right: 12, top: 12, bottom: -12, near: 1, far: 40 });
+scene.add(key);
+const rim = new THREE.DirectionalLight(0xffffff, DARK ? 1.4 : 0.5); rim.position.set(8, 5, -8); scene.add(rim);
+scene.add(new THREE.AmbientLight(0xffffff, DARK ? 0.02 : 0.08));
+
+const ENVI = DARK ? 0.35 : 0.55;
+const mat = {
+  body: new THREE.MeshPhysicalMaterial({ color: INK, roughness: 0.42, metalness: 0.0, clearcoat: 0.35, clearcoatRoughness: 0.5 }),
+  ceramic: new THREE.MeshPhysicalMaterial({ color: WHITE, roughness: 0.32, clearcoat: 0.6, clearcoatRoughness: 0.2 }),
+  orange: new THREE.MeshPhysicalMaterial({ color: ACC, roughness: 0.28, metalness: 0.55, clearcoat: 0.5 }),
+  orangeMatte: new THREE.MeshStandardMaterial({ color: ACC, roughness: 0.5 }),
+  paper: new THREE.MeshStandardMaterial({ color: 0xfbfaf8, roughness: 0.9 }),
+};
+Object.values(mat).forEach(m => m.envMapIntensity = ENVI);
+floor.material.envMapIntensity = 0.25;
+
+function labelTex(lines, w = 1024, h = 512, bg = null, fg = '#F2F1EE') {
+  const c = document.createElement('canvas'); c.width = w; c.height = h; const g = c.getContext('2d');
+  if (bg) { g.fillStyle = bg; g.fillRect(0, 0, w, h); }
+  for (const l of lines) { g.fillStyle = l.color || fg; g.font = l.font; g.textBaseline = 'alphabetic'; g.fillText(l.text, l.x, l.y); }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
+}
+
+function halfMoonGeo(r, depth) {
+  const s = new THREE.Shape(); s.moveTo(0, -r); s.absarc(0, 0, r, -Math.PI / 2, Math.PI / 2, true); s.lineTo(0, -r);
+  const g = new THREE.ExtrudeGeometry(s, { depth, bevelEnabled: true, bevelThickness: 0.015, bevelSize: 0.015, bevelSegments: 3, curveSegments: 64 });
+  return g;
+}
+
+// one plug-in module: body 3.0 x 0.9 x 2.0, half moon inlay on top, connector + prongs on +x face
+function module(num, name, opts = {}) {
+  const grp = new THREE.Group();
+  const bw = 3.0, bh = 0.9, bd = 2.0;
+  const body = new THREE.Mesh(new RoundedBoxGeometry(bw, bh, bd, 6, 0.16), mat.body);
+  body.position.y = bh / 2; body.castShadow = body.receiveShadow = true; grp.add(body);
+  // half moon inlay on top
+  const hm = new THREE.Mesh(halfMoonGeo(0.62, 0.04), mat.ceramic);
+  hm.rotation.x = -Math.PI / 2; hm.position.set(-0.55, bh + 0.001, 0.15); hm.castShadow = true; grp.add(hm);
+  // top label: number + name
+  const tex = labelTex([
+    { text: num, font: '500 150px PM', x: 40, y: 180, color: '#FF5533' },
+    { text: name, font: '500 120px HK', x: 40, y: 380 },
+  ]);
+  const lab = new THREE.Mesh(new THREE.PlaneGeometry(1.5, 0.75), new THREE.MeshStandardMaterial({ map: tex, transparent: true, roughness: 0.6 }));
+  lab.rotation.x = -Math.PI / 2; lab.position.set(0.55, bh + 0.003, 0.25); grp.add(lab);
+  // connector plate (the plug bar) on +x face
+  const bar = new THREE.Mesh(new RoundedBoxGeometry(0.12, 0.7, 1.5, 4, 0.03), mat.orange);
+  bar.position.set(bw / 2 + 0.06, bh / 2, 0); bar.castShadow = true; grp.add(bar);
+  // prongs 16 : 11
+  const p1 = new THREE.Mesh(new RoundedBoxGeometry(0.8, 0.12, 0.16, 4, 0.04), mat.orange);
+  p1.position.set(bw / 2 + 0.12 + 0.4, bh / 2, -0.3); p1.castShadow = true; grp.add(p1);
+  const p2 = new THREE.Mesh(new RoundedBoxGeometry(0.55, 0.12, 0.16, 4, 0.04), mat.orange);
+  p2.position.set(bw / 2 + 0.12 + 0.275, bh / 2, 0.3); p2.castShadow = true; grp.add(p2);
+  return grp;
+}
+
+// dock with 8 sockets
+function dock(lit) {
+  const grp = new THREE.Group();
+  const base = new THREE.Mesh(new RoundedBoxGeometry(14, 0.5, 4.2, 6, 0.2), mat.body);
+  base.position.y = 0.25; base.castShadow = base.receiveShadow = true; grp.add(base);
+  return grp;
+}
+
+const camera = new THREE.PerspectiveCamera(28, W / H, 0.1, 100);
+
+if (SCENE === 'hero') {
+  const m = module(NUM, NAME); m.rotation.y = -0.55; m.position.set(0.6, 0, 0); scene.add(m);
+  camera.position.set(-2.6, 4.6, 6.4); camera.lookAt(0.9, 0.3, 0.1);
+} else if (SCENE === 'bundle') {
+  const names = ['Lead', 'Follow-Up', 'Proposal', 'Session', 'Onboarding', 'Content', 'CRM', 'Ads'];
+  names.forEach((n, i) => { const m = module('0' + (i + 1), n); const col = i % 4, row = Math.floor(i / 4);
+    m.position.set(-5.4 + col * 3.6, 0, -1.6 + row * 3.0); m.rotation.y = 0; scene.add(m); });
+  camera.position.set(-2, 13, 12.5); camera.lookAt(0, 0, 0.2);
+} else if (SCENE === 'exploded') {
+  const m = module(NUM, NAME); m.rotation.y = -0.5; scene.add(m);
+  camera.position.set(-4.2, 5.4, 8.6); camera.lookAt(0.7, 0.35, 0);
+}
+
+renderer.render(scene, camera);
+window.__done = true;
+</script></body></html>
