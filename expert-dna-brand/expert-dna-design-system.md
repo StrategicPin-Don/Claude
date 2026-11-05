@@ -236,23 +236,22 @@ Layout rules: generous white space (at least one third of a slide or post empty)
 
 ---
 
-## 8. Product visuals (sales pages): "Plug your head in"
+## 8. Product visuals (sales pages)
 
-Files: `product-3d/` (overview: `product-3d/overview.png`). Every product is a physical 3D object from one hardware family: matte ink body, white ceramic half moon (the expert's head), orange metal plug (the connection to AI). PNG, 2400 x 1600 px, transparent background with a soft contact shadow, no logo, no brand name.
+Files: `product-3d/`. Four 3D concepts, each made for all 15 products (every product except the book) in the same five views. PNG, 2400 x 1600 px, transparent background with a soft contact shadow, no logo, no brand name. Pick one concept per page and keep it across that page.
 
-Objects: plugins 01-08 = plug-in modules with number and name; all 8 plugins = eight modules plugged into one spine; Starter = an open box of file cards; Setup Call = a wall socket with a module being plugged in; Connect and Run Kit = a power strip with modules and cable; Growth course = ascending blocks with a module on top; Strategy session = a large half moon sculpture with one plug; Done For You = a closed premium box with orange bands.
-
-The same five views for every product:
-
-| No. | View | What it shows |
+| Concept | Folder | What the product looks like |
 |---|---|---|
-| 1 | Hero | Three-quarter studio view |
-| 2 | Low | Low, close side angle |
-| 3 | Exploded | Parts pulled apart: what is inside |
-| 4 | Top | Top-down view of the object with its contents as cards |
-| 5 | Context | The object on a desk next to a laptop showing the plugin screen |
+| A | product-3d/A-box | A premium product box: ink cover with the product symbol, orange spine |
+| B | product-3d/B-screens | A floating app screen showing what the product produces |
+| C | product-3d/C-folders | A hardcover file folder with tabs: your knowledge, written down |
+| D | product-3d/D-tiles | A glossy 3D app tile with the product symbol |
 
-The earlier flat illustration set is in `archive/` and is not used. In product mockups only, a soft contact shadow is allowed; the no-shadow rule still applies to all other layouts.
+Same five views in every concept: 1 hero (three-quarter), 2 front, 3 contents (the object with cards listing what is inside), 4 top, 5 context (on a desk next to a laptop showing the product screen). Overviews: `product-3d/{concept}/overview-{concept}.png`.
+
+Product symbols are built only from the brand geometry (circles, half discs, bars, squares), one per product, never from icon packs. Accent tiles mark the hero products (Proposal, All 8 plugins, Done For You); the Strategy session uses ink.
+
+In product mockups only, a soft contact shadow is allowed; the no-shadow rule still applies to all other layouts. Earlier versions (flat illustrations, plug modules) are in `archive/` and are not used.
 
 ## 9. Plugin identity
 
@@ -341,7 +340,7 @@ expert-dna-brand/
   logo/svg, logo/png, logo/favicon, logo/logo-rules.png
   fonts/                         Hanken Grotesk, IBM Plex Mono, licences, FONTS.md
   tokens/                        tokens.css, tokens.json, contrast.json
-  product-3d/                    3D product visuals: 15 products x 5 views, transparent PNG, overview
+  product-3d/                    3D product visuals: 4 concepts x 15 products x 5 views, transparent PNG
   powerpoint/                    expert-dna-template.pptx, preview, HOW-TO-USE.md
   applications/                  social, ads, email, link preview, landing, components, plugins
   archive/v1-two-halves/         previous version, not for use
