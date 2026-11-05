@@ -1,0 +1,290 @@
+[
+  {
+    "text": "ink",
+    "bg": "paper",
+    "text_hex": "#101114",
+    "bg_hex": "#F4F1EC",
+    "ratio": 16.76,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "white",
+    "bg": "paper",
+    "text_hex": "#FFFFFF",
+    "bg_hex": "#F4F1EC",
+    "ratio": 1.13,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "accent",
+    "bg": "paper",
+    "text_hex": "#FF5533",
+    "bg_hex": "#F4F1EC",
+    "ratio": 2.82,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "accent_deep",
+    "bg": "paper",
+    "text_hex": "#B32F15",
+    "bg_hex": "#F4F1EC",
+    "ratio": 5.59,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "grey",
+    "bg": "paper",
+    "text_hex": "#66655F",
+    "bg_hex": "#F4F1EC",
+    "ratio": 5.19,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "grey_dark",
+    "bg": "paper",
+    "text_hex": "#A3A29C",
+    "bg_hex": "#F4F1EC",
+    "ratio": 2.27,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "ink",
+    "bg": "white",
+    "text_hex": "#101114",
+    "bg_hex": "#FFFFFF",
+    "ratio": 18.88,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "paper",
+    "bg": "white",
+    "text_hex": "#F4F1EC",
+    "bg_hex": "#FFFFFF",
+    "ratio": 1.13,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "accent",
+    "bg": "white",
+    "text_hex": "#FF5533",
+    "bg_hex": "#FFFFFF",
+    "ratio": 3.18,
+    "aa_normal": false,
+    "aa_large": true
+  },
+  {
+    "text": "accent_deep",
+    "bg": "white",
+    "text_hex": "#B32F15",
+    "bg_hex": "#FFFFFF",
+    "ratio": 6.3,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "grey",
+    "bg": "white",
+    "text_hex": "#66655F",
+    "bg_hex": "#FFFFFF",
+    "ratio": 5.85,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "grey_dark",
+    "bg": "white",
+    "text_hex": "#A3A29C",
+    "bg_hex": "#FFFFFF",
+    "ratio": 2.56,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "paper",
+    "bg": "ink",
+    "text_hex": "#F4F1EC",
+    "bg_hex": "#101114",
+    "ratio": 16.76,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "white",
+    "bg": "ink",
+    "text_hex": "#FFFFFF",
+    "bg_hex": "#101114",
+    "ratio": 18.88,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "accent",
+    "bg": "ink",
+    "text_hex": "#FF5533",
+    "bg_hex": "#101114",
+    "ratio": 5.93,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "accent_deep",
+    "bg": "ink",
+    "text_hex": "#B32F15",
+    "bg_hex": "#101114",
+    "ratio": 3.0,
+    "aa_normal": false,
+    "aa_large": true
+  },
+  {
+    "text": "grey",
+    "bg": "ink",
+    "text_hex": "#66655F",
+    "bg_hex": "#101114",
+    "ratio": 3.23,
+    "aa_normal": false,
+    "aa_large": true
+  },
+  {
+    "text": "grey_dark",
+    "bg": "ink",
+    "text_hex": "#A3A29C",
+    "bg_hex": "#101114",
+    "ratio": 7.38,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "ink",
+    "bg": "accent",
+    "text_hex": "#101114",
+    "bg_hex": "#FF5533",
+    "ratio": 5.93,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "paper",
+    "bg": "accent",
+    "text_hex": "#F4F1EC",
+    "bg_hex": "#FF5533",
+    "ratio": 2.82,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "white",
+    "bg": "accent",
+    "text_hex": "#FFFFFF",
+    "bg_hex": "#FF5533",
+    "ratio": 3.18,
+    "aa_normal": false,
+    "aa_large": true
+  },
+  {
+    "text": "accent_deep",
+    "bg": "accent",
+    "text_hex": "#B32F15",
+    "bg_hex": "#FF5533",
+    "ratio": 1.98,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "grey",
+    "bg": "accent",
+    "text_hex": "#66655F",
+    "bg_hex": "#FF5533",
+    "ratio": 1.84,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "grey_dark",
+    "bg": "accent",
+    "text_hex": "#A3A29C",
+    "bg_hex": "#FF5533",
+    "ratio": 1.24,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "ink",
+    "bg": "accent_tint",
+    "text_hex": "#101114",
+    "bg_hex": "#FFE1D8",
+    "ratio": 15.3,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "paper",
+    "bg": "accent_tint",
+    "text_hex": "#F4F1EC",
+    "bg_hex": "#FFE1D8",
+    "ratio": 1.1,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "white",
+    "bg": "accent_tint",
+    "text_hex": "#FFFFFF",
+    "bg_hex": "#FFE1D8",
+    "ratio": 1.23,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "accent",
+    "bg": "accent_tint",
+    "text_hex": "#FF5533",
+    "bg_hex": "#FFE1D8",
+    "ratio": 2.58,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "accent_deep",
+    "bg": "accent_tint",
+    "text_hex": "#B32F15",
+    "bg_hex": "#FFE1D8",
+    "ratio": 5.1,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "grey",
+    "bg": "accent_tint",
+    "text_hex": "#66655F",
+    "bg_hex": "#FFE1D8",
+    "ratio": 4.74,
+    "aa_normal": true,
+    "aa_large": true
+  },
+  {
+    "text": "grey_dark",
+    "bg": "accent_tint",
+    "text_hex": "#A3A29C",
+    "bg_hex": "#FFE1D8",
+    "ratio": 2.07,
+    "aa_normal": false,
+    "aa_large": false
+  },
+  {
+    "text": "ink",
+    "bg": "alt_accent_FF7520",
+    "text_hex": "#101114",
+    "bg_hex": "#FF7520",
+    "ratio": 7.03,
+    "aa_normal": true,
+    "aa_large": true
+  }
+]
